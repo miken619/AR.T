@@ -109,8 +109,8 @@ export default class MyCamera extends Component {
 
     fetch(`${config.localhost}/api/chat/addChat`, obj)
     .then((response) => {
-      //return response.json();
-     return;
+      return response.json();
+    
     })
     .then((data) => {
       console.log('Image successfully added');
